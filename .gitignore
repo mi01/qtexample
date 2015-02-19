@@ -1,0 +1,15 @@
+# object and build files
+obj
+build
+src/qt/moc/*
+
+# random stuff
+QtExample.make
+/Makefile
+*~
+
+# eclipse
+.cproject
+.project
+.metadata
+.settings

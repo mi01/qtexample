@@ -2,6 +2,7 @@
 obj
 build
 src/qt/moc/*
+premake/premake4
 
 # random stuff
 QtExample.make

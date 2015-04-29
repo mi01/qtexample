@@ -1,3 +1,3 @@
 # QtExample
 
-Stub of a Qt project. Make use of premake makefile generation.
+Stub of a Qt sample project. Put the [Premake4 binary](https://premake.github.io/download.html) to the premake-folder to use the build environment.

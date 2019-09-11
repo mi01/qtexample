@@ -47,6 +47,7 @@ solution "QtExample"
 
 		-- more warnings are always good
 		buildoptions {
+			"-fPIC",
 			"-Wpointer-arith",
 			"-Wcast-qual",
 			"-Wwrite-strings",
@@ -69,14 +70,16 @@ solution "QtExample"
 		}
 
 		includedirs {
-			"/usr/include/qt4",
-			"/usr/include/qt4/QtGui",
-			"/usr/include/qt4/QtCore",
-			"/usr/include/qt4/QtOpenGL"
+			"/usr/include/qt",
+			"/usr/include/qt/QtWidgets",
+			"/usr/include/qt/QtGui",
+			"/usr/include/qt/QtCore",
+			"/usr/include/qt/QtOpenGL"
 		}
 		
 		links {
-			"QtGui",
-			"QtCore",
-			"QtOpenGL"
+			"Qt5Gui",
+			"Qt5Core",
+			"Qt5OpenGL",
+			"Qt5Widgets"
 		}

@@ -13,7 +13,7 @@ mkdir -p ./././././././src/qt/moc
 
 for filename in $(find ./src/qt -type f -name "*.h" | sed -E 's/^(.*)\/([^\/]+)\.h/\2/')
 	do 
-		moc_cmd="moc-qt4 ./src/qt/$filename.h -o ./src/qt/moc/$filename.cpp"; 
+		moc_cmd="moc-qt5 ./src/qt/$filename.h -o ./src/qt/moc/$filename.cpp"; 
 		$moc_cmd; 
 		echo $moc_cmd; 
 		done;

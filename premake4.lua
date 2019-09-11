@@ -14,16 +14,16 @@ solution "QtExample"
 	configuration "Debug"
 		defines { "DEBUG" }
 		flags { "Symbols" }
+		targetdir "build/debug"
  
 	configuration "Release"
 		defines { "NDEBUG", "QT_NO_DEBUG" }
 		flags { "Optimize", "OptimizeSpeed" }
+		targetdir "build/release"
 
 	project "QtExample"
 		kind "WindowedApp"
 		language "C++"
-
-		targetdir "build"
 		objdir "obj"
 
 		files {
